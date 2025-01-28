@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Yu-Gi-Oh";
+    src: url(../font/fonte-yu-gi-oh.otf);
+}
+
+
+:root {
+    /* fonts */
+    --fonte1:"Yu-Gi-Oh";
+
+    /* color */
+    --color1:#ffffff;
+    --color2:#f3e2c8;
+    --color3:#e4cfa5;
+    --color4:#c4a57a;
+    --color5:#a67c52;
+}

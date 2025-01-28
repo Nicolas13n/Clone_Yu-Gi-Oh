@@ -1,0 +1,188 @@
+body {
+    font-family: var(--fonte1), serif;
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+#cabeçalho {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#cabeçalho #titulo {
+    color: var(--color1);
+
+}
+
+#slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 80px;
+}
+
+
+
+.cartao {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.lista-personagens {
+
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cartao .nome {
+
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, var(--color2), var(--color3), var(--color4));
+    border: 2px solid var(--color5);
+    border-radius: 4px;
+
+}
+
+.cartao .estrela {
+    width: 20px;
+    height: 20px;
+    background-image: url(../imagens/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+
+.cartao .nivel-carta {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+
+}
+
+.cartao .imagem-carta {
+    max-width: 260px;
+    align-self: center;
+
+}
+
+.cartao .informacoes {
+    border-radius: 5px;
+    max-width: 300px;
+    background: radial-gradient(circle, var(--color2), var(--color3), var(--color4));
+    color: #000000;
+    border: 2px solid var(--color5);
+    text-align: left;
+    line-height: 1.5;
+}
+
+.cartao .informacoes .informacoes-ataque {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+
+}
+
+.cartao .informacoes .informacoes-ataque span {
+    font-size: 13px;
+}
+
+.cartao .informacoes .descricao {
+    border-bottom: 1px solid;
+    padding: 10px;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 13px;
+}
+
+.fundo-1 {
+    background: url(../imagens/fundo-1.jpg);
+}
+
+.fundo-2 {
+    background: url(../imagens/fundo-2.jpg);
+}
+
+.fundo-3 {
+    background: url(../imagens/fundo-3.jpg);
+}
+
+.fundo-4 {
+    background: url(../imagens/fundo-4.jpg);
+}
+
+.fundo-5 {
+    background: url(../imagens/fundo-5.jpg);
+}
+
+.fundo-6 {
+    background: url(../imagens/fundo-6.jpg);
+}
+
+.fundo-7 {
+    background: url(../imagens/fundo-7.jpg);
+}
+
+.btn-seta {
+    background-color: var(--color1);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: var(--color3);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #c08057;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #c08057;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #c08057;
+    
+}
